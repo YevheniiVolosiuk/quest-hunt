@@ -44,7 +44,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -83,10 +83,10 @@ jobs:
 #          AWS_ACCESS_KEY_ID: random_key
 #          AWS_SECRET_ACCESS_KEY: random_secret
 
-      - name: Store artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: logs
-          path: |
-            vendor/orchestra/testbench-core/laravel/storage/logs
-            !vendor/**/.gitignore
+#      - name: Store artifacts
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: logs
+#          path: |
+#            vendor/orchestra/testbench-core/laravel/storage/logs
+#            !vendor/**/.gitignore
