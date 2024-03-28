@@ -51,3 +51,7 @@ jobs:
         env:
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
         run: php artisan test
+
+      - name: Execute tests via Larastan
+        run: ./vendor/bin/phpstan analyse
+
