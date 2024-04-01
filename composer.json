@@ -6,8 +6,11 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "http-interop/http-factory-guzzle": "^1.2",
         "laravel/framework": "^11.0",
-        "laravel/tinker": "^2.9"
+        "laravel/scout": "^10.8",
+        "laravel/tinker": "^2.9",
+        "meilisearch/meilisearch-php": "^1.7"
     },
     "require-dev": {
         "deployer/deployer": "^7.3",
